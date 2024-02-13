@@ -59,16 +59,22 @@ button:active{
     background-color: hsl(35, 100%, 75%);
 }
 
+.wrapper-main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 @media only screen and (max-width: 600px) {
-    #calculator{
+
+    .wrapper-main {
         width: 100%;
-        height: 100%;
-        border-radius: 0;
     }
-    #display{
-        height: 15%;
+}
+
+@media only screen and (min-width: 601px) {
+
+    .wrapper-main {
+        width: 100%;
     }
-    #keys{
-        height: 75%;
-    }
-  }
+}
