@@ -106,37 +106,36 @@ button:active{
         border-radius: 0;
     }
     #display{
-        height: 15%;
-        font-size: 3rem;
+        height: 10%;
+        font-size: 2rem;
     }
     #keys{
-        height: 70%;
+        height: 50%;
         gap: 20px;
     }
     button{
         width:100%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
   }
 
-
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 800px) {
     #calculator{
         width: 100%;
         height: 100%;
         border-radius: 0;
     }
     #display{
-        height: 15%;
-        font-size: 3rem;
+        height: 7%;
+        font-size: 1.5rem;
     }
     #keys{
-        height: 70%;
+        height: 60%;
         gap: 20px;
     }
     button{
         width:100%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
   }
 
