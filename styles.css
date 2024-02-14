@@ -1,66 +1,205 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
-    width: 100%;
-    height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #201d1f;
+    height: 100vh;
+    background-color: #474470;
 }
-
-.calculator{
-    border: 1% solid #ffffff;
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: #423b40;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
     padding: 20px;
-    border-radius: 5%;
-    background: #423b40;
-}
-
-input{
-    width: 320px;
+    font-size: 5rem;
+    text-align: left;
     border: none;
-    padding: 24px;
-    margin: 10px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
-    font-size: 40px;
-    text-align: right;
-    cursor: pointer;
-    color: #ffffff;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
 }
-
-input::placeholder{
-    color: #ffffff;
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    height: 75%;
 }
-
 button{
+    width: 75%;
+    height: 100%;
+    border-radius: 50px;
     border: none;
-    width: 18%;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50%;
-    background: #474470;
-    color: #ffffff;
-    font-size: 20px;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.equalBtn{
-    background-color: #fb7c14;
+button:hover{
+    background-color: hsl(0, 0%, 49%);
+}
+button:active{
+    background-color: #857c92;
+}
+.operator-btn{
+    background-color: #6d6579;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.operator-btn:hover{
+    background-color: hsl(0, 0%, 75%);
+}
+.operator-btn:active{
+    background-color: hsl(0, 0%, 75%);
 }
 
-.operator{
-    color: #fb7c14;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a {
-      float: none;
-      width: 100%;
+@media only screen and (max-width: 600px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 15%;
+    }
+    #keys{
+        height: 70%;
+        gap: 20px;
+    }
+    button{
+        width:100%;
+        font-size: 2rem;
     }
   }
+
+
+  @media only screen and (max-width: 700px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 15%;
+    }
+    #keys{
+        height: 70%;
+        gap: 20px;
+    }
+    button{
+        width:100%;
+        font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 15%;
+        font-size: 3rem;
+    }
+    #keys{
+        height: 70%;
+        gap: 20px;
+    }
+    button{
+        width:100%;
+        font-size: 2rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 15%;
+        font-size: 3rem;
+    }
+    #keys{
+        height: 70%;
+        gap: 20px;
+    }
+    button{
+        width:100%;
+        font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 25%;
+        font-size: 3rem;
+    }
+    #keys{
+        height: 60%;
+        gap: 20px;
+    }
+    button{
+        width:75%;
+        height: 90%;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 25%;
+        font-size: 3rem;
+    }
+    #keys{
+        height: 60%;
+        gap: 20px;
+    }
+    button{
+        width:75%;
+        height: 90%;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-height: 400px) {
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #display{
+        height: 15%;
+        font-size: 3rem;
+    }
+    #keys{
+        height: 60%;
+        gap: 20px;
+    }
+    button{
+        width:75%;
+        height: 90%;
+        font-size: 1.5rem;
+    }
+}
